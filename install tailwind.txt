@@ -1,0 +1,1 @@
+https://paulreaney.medium.com/install-tailwind-in-vue-3-project-fc4a6db10bf0
