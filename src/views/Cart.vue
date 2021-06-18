@@ -1,7 +1,7 @@
 <template>
     <h1 class="text-center text-2xl py-4">Shopping Cart</h1>
     <div v-if="items.length > 0" class="item-group">
-        <div v-for="item in items" :key="item.id" class="flex flex-row item-area my-4" :id="item.id">
+        <div v-for="item in items" :key="item.id" class="flex flex-row item-area my-4 border-solid border-2 border-blue-300 px-2 py-2" :id="item.id">
             <img :src="item.img" class="item-img" :alt="item.name">
             <div class="flex flex-col mx-4 desc">
                 <h2 class="text-center"><b>{{item.name}}</b></h2>
@@ -20,7 +20,7 @@
             <h2><b>Total:</b> U$ {{total.toFixed(2)}}</h2>
         </div>
         <div class="mt-4">
-            <button class="btn btn-empty block mx-auto view-prod px-2 py-2" @click="clear()">Clear Cart</button>
+            <button class="btn btn-empty block mx-auto view-prod px-2 py-2 mb-8" @click="clear()">Clear Cart</button>
         </div>
     </div>
     <div v-else>
@@ -110,6 +110,7 @@ export default {
     @media (max-width: 670px) {
         .item-area{
             flex-direction: column;
+            margin-inline: 1rem;
         }
         .item-img{
             margin-inline: auto;

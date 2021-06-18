@@ -53,7 +53,8 @@ a{
    transition: 1s ease;
    border-width: 1px;
    border-style: solid;
-   color: rgba(30, 58, 138,1) ;
+   background-color: rgba(255, 255, 255,.5);
+   color: rgba(30, 58, 138,1);
 }
 .details:hover{
     background-color: rgba(30, 58, 138,1);
